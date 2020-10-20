@@ -1,9 +1,10 @@
 import express from 'express'
 import routes from './routes'
 import './database/connection'
+import errorHandler from './errors/handler'
 import 'express-async-errors'
 import path from 'path'
-import errorHandler from './errors/handler'
+
 import cors from 'cors'
 const app = express()
 app.use(express.json())
