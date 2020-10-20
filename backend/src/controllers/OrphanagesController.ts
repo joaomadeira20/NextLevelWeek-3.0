@@ -65,7 +65,7 @@ export default {
         })
 
         await schema.validate(data, {
-            abortEarly:false
+            abortEarly:true
         })
         const orphanage = orphanagesRepository.create(data)
         await orphanagesRepository.save(orphanage)
